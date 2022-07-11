@@ -13,7 +13,9 @@ public class ModItems {
             DeferredRegister.create(ForgeRegistries.ITEMS, MyAss.MODID);
 
     public static final RegistryObject<Item> NUT = ITEMS.register("nut",
-            () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+            () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_FOOD)));
+    public static final RegistryObject<Item> ROASTED_NUT = ITEMS.register("roasted_nut",
+            () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_FOOD)));
     public static void register(IEventBus eventBus){
         ITEMS.register(eventBus);
     }
