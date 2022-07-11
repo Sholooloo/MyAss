@@ -1,6 +1,7 @@
 package com.sholooloo.myass;
 
 import com.mojang.logging.LogUtils;
+import com.sholooloo.myass.item.ModItems;
 import net.minecraft.client.Minecraft;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTab;
@@ -31,6 +32,8 @@ public class MyAss
     public MyAss()
     {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
+
+        ModItems.register(modEventBus);
 
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
