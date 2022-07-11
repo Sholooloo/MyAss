@@ -1,4 +1,6 @@
 {
   "item.myass.nut": "Nut",
-  "item.myass.roasted_nut": "Roasted Nut"
+  "item.myass.roasted_nut": "Roasted Nut",
+
+  "itemGroup.asstab": "My Ass"
 }
