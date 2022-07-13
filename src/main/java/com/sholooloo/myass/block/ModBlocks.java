@@ -21,7 +21,7 @@ public class ModBlocks {
     public static final DeferredRegister<Block> BLOCKS =
             DeferredRegister.create(ForgeRegistries.BLOCKS, MyAss.MODID);
 
-    public static final RegistryObject<Block> CUM_GRASS = registerBlock("cum_grass",
+    public static final RegistryObject<Block> CUM_BLOCK = registerBlock("cum_block",
             () -> new Block(BlockBehaviour.Properties.of(Material.GRASS)
                     .strength(0.6f).destroyTime(.9f)), ModCreativeModeTab.MYASS_TAB);
 
